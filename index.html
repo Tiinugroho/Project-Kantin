@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="scss/style.css">
+    <script src="src/js/script.js"></script>
+    <link rel="shortcut icon" href="icons/Logo-UMRI.ico" type="image/x-icon">
+    <title>Kantin UMRI</title>
+</head>
+
+<body>
+    <header class="header fixed-top">
+        <div class="logo-top"></div>
+        <div class="navbar">
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="logoimg">
+            <img src="icons/logo_umri.png" alt="" class="logo-img">
+        </div>
+    </header>
+    <!--Carousel-->
+    <div style="margin-top: 40px;">
+        <div class="carousel">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="icons/kantin1.src/mie_goreng.jpg" class="d-block w-100" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="icons/kantin1.src/mie_goreng.jpg" class="d-block w-100" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="icons/kantin1.src/mie_goreng.jpg" class="d-block w-100" alt="">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!--End Carousel-->
+
+    <!--Hero-->
+    <div class="hero-1">
+        <div class="container">
+            <div class="hc spacecontent">
+                <div class="d-flex ai-center jb-sc">
+                    <div class="hc-desc">
+                        <div class="spacer"></div>
+                        <h1>Ayo Ciptakan Lingkungan
+                            <br> Kantin yang Sehat!
+                        </h1>
+                        <p>Mari Kurangi kegiatan Merokok Dikantin.
+                            <br>Agar menciptakan lingkungan bebas asap rokok.
+                        </p>
+                        <div class="spacer"></div>
+                        <div class="spacer"></div>
+                    </div>
+                    <div class="hc-image">
+                        <img src="icons/kantin.jpg" alt="" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Hero-->
+    
+    <!-- Nama Kantin -->
+    <div id="kantin" class="kantin"></div>
+    <div class="spacecontent" id="package">
+        <div class="store">
+            <p class="nama">Nama Kantin</p>
+            <div class="container">
+                <div class="d-flex jb-sc">
+                    <div class="store-item">
+                        <img src="icons/item1.jpg" alt="" class="img-responsive">
+                        <h3>Kantin
+                            <br>Awefa
+                        </h3>
+                        <p>Silahkan Cek Menu!</p>
+                        <div class="price">
+                            <button onclick="redirWeb1()" class="btn">Order</button>
+                        </div>
+                    </div>
+                    <div class="store-item">
+                        <img src="icons/item1.jpg" alt="" class="img-responsive">
+                        <h3>Kantin
+                            <br>O2
+                        </h3>
+                        <p>Silahkan Cek Menu!</p>
+                        <div class="price">
+                            <button onclick="redirWeb2()" class="btn">Order</button>
+                        </div>
+                    </div>
+                    <div class="store-item">
+                        <img src="icons/item1.jpg" alt="" class="img-responsive">
+                        <h3>Kantin
+                            <br>Cantik
+                        </h3>
+                        <p>Silahkan Cek Menu!</p>
+                        <div class="price">
+                            <button onclick="redirWeb3() " class="btn">Order</button>
+                        </div>
+                    </div>
+                    <div class="store-item">
+                        <img src="icons/item1.jpg" alt="" class="img-responsive">
+                        <h3>Kantin
+                            <br> Pojok
+                        </h3>
+                        <p>Silahkan Cek Menu!</p>
+                        <div class="price">
+                            <button onclick="redirWeb4()" class="btn">Order</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex jb-sc spaceheader">
+                    <div class="store-item">
+                        <img src="icons/item1.jpg" alt="" class="img-responsive">
+                        <h3>Kantin 5</h3>
+                        <p>Silahkan Cek Menu!</p>
+                        <div class="price">
+                            <button onclick="redirWeb5()" class="btn">Order</button>
+                        </div>
+                    </div>
+                    <div class="store-item">
+                        <img src="icons/item1.jpg" alt="" class="img-responsive">
+                        <h3>Kantin 6</h3>
+                        <p>Silahkan Cek Menu!</p>
+                        <div class="price">
+                            <button onclick="redirWeb6()" class="btn">Order</button>
+                        </div>
+                    </div>
+                    <div class="store-item">
+                        <img src="icons/item1.jpg" alt="" class="img-responsive">
+                        <h3>Kantin 7</h3>
+                        <p>Silahkan Cek Menu!</p>
+                        <div class="price">
+                            <button onclick="redirWeb7()" class="btn">Order</button>
+                        </div>
+                    </div>
+                    <div class="store-item">
+                        <img src="icons/item1.jpg" alt="" class="img-responsive">
+                        <h3>Kantin 8</h3>
+                        <p>Silahkan Cek Menu!</p>
+                        <div class="price">
+                            <button onclick="redirWeb8()" class="btn">Order</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Nama Kantin -->
+
+    <!--Last Content-->
+    <div class="last-content">
+        <div class="img-last">
+            <img src="/icons/logo_umri_putih.png" alt="" class="img-last2">
+            <p class="desc-last">Jl. Tuanku Tambusai Kota Pekanbaru
+                <br>Kode Pos 28294
+                <br>Provinsi Riau
+            </p>
+        </div>
+        <div class="img-merdeka">
+            <img src="/icons/logo-akreditasi-dan-kampus-merdeka.png" alt="" class="merdeka">
+            <p class="desc-merdeka"><b>AKREDITASI INSTITUSI BAIK</b>
+                <br>Universitas Muhammadiyah Riau telah mendapatkan
+                <br>Akreditasi Nasional Perguruan Tinggi (BAN-PT) pada
+                <br>tahun 2018
+            </p>
+        </div>
+    </div>
+    <!--End Last Content-->
+
+    <!--Footer-->
+    <div class="footer">
+        <div class="container">
+            <p>&copy; Copyright - Abynn 2023 | All Right Reserved</p>
+        </div>
+    </div>
+    <!--End Footer-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
